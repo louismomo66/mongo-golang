@@ -22,7 +22,7 @@ http.ListenAndServe("localhost:9000",r)
 
 func getSession() *mongo.Client {
 	// s, err := mgo.Dial("mongodb+srv://louis:09147625@cluster0.t9yxjh9.mongodb.net/")
-	s, err := mongo.Connect(context.TODO(), options.Client().ApplyURI("mongodb+srv://louis:09147625@cluster0.t9yxjh9.mongodb.net/"))
+	s, err := mongo.Connect(context.TODO(), options.Client().ApplyURI("mongodb+srv://louis:databasekey@cluster0.t9yxjh9.mongodb.net/"))
 	if err != nil {
 		panic(err)
 	}
